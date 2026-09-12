@@ -1,0 +1,49 @@
+random_seed: 42
+
+data:
+  sugarcane_path: data/raw/sugarcane.csv
+  nasa_cache_path: data/external/nasa_power.csv
+  processed_path: data/processed/sugarcane_nasa_features.csv
+  primary_dataset:
+    name: Sugarcane Irrigation Dataset for the SIDSS Framework
+    institution_source_association: NIT Patna
+    role: Primary sugarcane, soil, crop, and irrigation dataset
+    zenodo_record_url: https://zenodo.org/records/19725692
+    doi: 10.5281/zenodo.19725692
+    filename: catboostsugarcane_yield_prediction_regularized.csv
+    expected_md5: 3efe98841dd7d873006fd64645584012
+    download_urls:
+      - https://zenodo.org/records/19725692/files/catboostsugarcane_yield_prediction_regularized.csv?download=1
+      - https://raw.githubusercontent.com/avinashkph23ce-a11y/sugarcane-irrigation-dataset/main/catboostsugarcane_yield_prediction_regularized.csv
+
+nasa_power:
+  latitude: 25.6207
+  longitude: 85.1727
+  start_date: 2025-01-01
+  end_date: 2025-12-31
+  location_rationale: Dataset has no row-level latitude/longitude; using NIT Patna coordinates because the required SIDSS dataset is associated with NIT Patna.
+  date_range_rationale: Dataset has seasonal labels but no row-level dates; using a recent complete calendar year as representative daily NASA POWER context and aggregating weather when exact date alignment is impossible.
+  parameters:
+    - T2M
+    - T2M_MIN
+    - T2M_MAX
+    - RH2M
+    - PRECTOTCORR
+    - WS2M
+    - ALLSKY_SFC_SW_DWN
+    - PS
+
+schema:
+  date_column:
+  latitude_column:
+  longitude_column:
+
+targets:
+  regression_target: drip_liters_per_day
+  water_unit: liters/day
+
+training:
+  test_size: 0.2
+  validation_size: 0.2
+  cv_splits: 3
+  random_search_iter: 8

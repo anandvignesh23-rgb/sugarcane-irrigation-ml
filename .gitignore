@@ -1,0 +1,54 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.mypy_cache/
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# macOS
+.DS_Store
+
+# IDE
+.vscode/
+.idea/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Build/cache
+build/
+dist/
+*.egg-info/
+
+# Logs and temporary files
+*.log
+tmp/
+temp/
+
+# Data and generated ML artifacts
+data/raw/*.csv
+data/external/*.json
+data/external/*.csv
+data/processed/*.csv
+models/**/*.joblib
+models/**/*.pkl
+reports/figures/*.png
+reports/metrics/*.json
+reports/metrics/*.csv
+
+# Small demonstration outputs intentionally kept for GitHub README.
+!reports/figures/actual_vs_predicted.png
+!reports/figures/residual_plot.png
+!reports/figures/regressor_comparison.png
+!reports/figures/gradient_or_best_regressor_feature_importance.png
+!reports/metrics/regressor_comparison.csv
