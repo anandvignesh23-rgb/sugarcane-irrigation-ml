@@ -207,3 +207,16 @@ Generated data, caches, and model binaries are ignored by git. The code can recr
 - Add crop-stage-aware model analysis.
 - Deploy the predictor as a web dashboard.
 - Validate across multiple farms and geographies.
+
+## Model Notebooks
+
+| Notebook | Role |
+|---|---|
+| [01_linear_regression.ipynb](notebooks/01_linear_regression.ipynb) | Linear Regression |
+| [02_decision_tree_regressor.ipynb](notebooks/02_decision_tree_regressor.ipynb) | Decision Tree Regressor |
+| [03_random_forest_regressor.ipynb](notebooks/03_random_forest_regressor.ipynb) | Random Forest Regressor |
+| [04_gradient_boosting_regressor.ipynb](notebooks/04_gradient_boosting_regressor.ipynb) | XGBoost Regressor |
+
+See [notebook instructions](notebooks/README.md) for execution and data limitations.
+
+[View/download the complete four-model output report](reports/model_outputs.html) (open the downloaded HTML in a browser for all tables and plots).

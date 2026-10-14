@@ -1,0 +1,59 @@
+{
+  "linear_regression": {
+    "best_params": {},
+    "cv_score": NaN,
+    "test_metrics": {
+      "mae": 1241975701.8439429,
+      "rmse": 1861024286.3836665,
+      "r2": 0.6079455778911985
+    },
+    "gradient_boosting_implementation": null
+  },
+  "decision_tree": {
+    "best_params": {
+      "model__min_samples_split": 10,
+      "model__min_samples_leaf": 5,
+      "model__max_depth": null
+    },
+    "cv_score": -2705709451.7550564,
+    "test_metrics": {
+      "mae": 1277981402.8327599,
+      "rmse": 2402311810.374691,
+      "r2": 0.34671749461770385
+    },
+    "gradient_boosting_implementation": null
+  },
+  "random_forest": {
+    "best_params": {
+      "model__n_estimators": 350,
+      "model__min_samples_split": 5,
+      "model__min_samples_leaf": 2,
+      "model__max_features": null,
+      "model__max_depth": 8
+    },
+    "cv_score": -2039427445.7186997,
+    "test_metrics": {
+      "mae": 1022519466.5903544,
+      "rmse": 1879236125.145459,
+      "r2": 0.6002348049883315
+    },
+    "gradient_boosting_implementation": null
+  },
+  "gradient_boosting": {
+    "best_params": {
+      "model__subsample": 1.0,
+      "model__reg_lambda": 1.0,
+      "model__n_estimators": 250,
+      "model__max_depth": 5,
+      "model__learning_rate": 0.08,
+      "model__colsample_bytree": 1.0
+    },
+    "cv_score": -1765459801.853574,
+    "test_metrics": {
+      "mae": 802871225.5711167,
+      "rmse": 1706409283.2585287,
+      "r2": 0.6703836958142111
+    },
+    "gradient_boosting_implementation": "xgboost"
+  }
+}

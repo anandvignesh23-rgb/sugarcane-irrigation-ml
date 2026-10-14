@@ -1,0 +1,54 @@
+{
+  "01_linear_regression.ipynb": {
+    "model": "Linear Regression",
+    "metrics": {
+      "mae": 1241975701.8439426,
+      "rmse": 1861024286.383666,
+      "r2": 0.6079455778911986
+    },
+    "top_features": "categorical__inputleaf_leaf_1304, categorical__inputleaf_leaf_1430, categorical__inputleaf_leaf_1488",
+    "strength": "Simple, interpretable, and fast",
+    "limitation": "Limited nonlinear modeling; sensitive to outliers and assumptions",
+    "rendered_plots": 2,
+    "execution": "PASS"
+  },
+  "02_decision_tree_regressor.ipynb": {
+    "model": "Decision Tree Regressor",
+    "metrics": {
+      "mae": 1277981402.8327599,
+      "rmse": 2402311810.374691,
+      "r2": 0.34671749461770385
+    },
+    "top_features": "numeric__leafevaporation, numeric__soilhumidity, numeric__stomataopenclose",
+    "strength": "Interpretable rules, nonlinear relationships, and interactions",
+    "limitation": "High variance and overfitting risk",
+    "rendered_plots": 3,
+    "execution": "PASS"
+  },
+  "03_random_forest_regressor.ipynb": {
+    "model": "Random Forest Regressor",
+    "metrics": {
+      "mae": 1022519466.590354,
+      "rmse": 1879236125.1454592,
+      "r2": 0.6002348049883315
+    },
+    "top_features": "numeric__leafevaporation, numeric__microclimaticwindspeed, numeric__nitrogen",
+    "strength": "Robust nonlinear modeling on tabular data",
+    "limitation": "Larger model and less interpretable than one tree",
+    "rendered_plots": 2,
+    "execution": "PASS"
+  },
+  "04_gradient_boosting_regressor.ipynb": {
+    "model": "XGBoost Regressor",
+    "metrics": {
+      "mae": 802871225.5711167,
+      "rmse": 1706409283.2585287,
+      "r2": 0.6703836958142111
+    },
+    "top_features": "categorical__inputleaf_leaf_201, numeric__leafevaporation, categorical__inputleaf_leaf_1304",
+    "strength": "Captures complex nonlinear relationships",
+    "limitation": "More hyperparameters, overfitting risk, and less direct interpretability",
+    "rendered_plots": 2,
+    "execution": "PASS"
+  }
+}
