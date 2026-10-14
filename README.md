@@ -220,3 +220,5 @@ Generated data, caches, and model binaries are ignored by git. The code can recr
 See [notebook instructions](notebooks/README.md) for execution and data limitations.
 
 [View/download the complete four-model output report](reports/model_outputs.html) (open the downloaded HTML in a browser for all tables and plots).
+
+[Download the one-page model performance comparison (PDF)](reports/Four_Model_Performance_Comparison.pdf) for the metrics table, comparison charts, and key findings for all four models.
